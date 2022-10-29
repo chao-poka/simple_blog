@@ -1,7 +1,8 @@
 import StyledApp from './components/styled/App.styled'
 import GlobalStyle from './components/styled/GlobalStyles'
+import Signup from './components/Signup'
 import { ThemeProvider } from 'styled-components'
-import { darkTheme } from './themes'
+import { darkTheme, monochromeTheme } from './themes'
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -9,7 +10,11 @@ function App() {
     <BrowserRouter>
       <ThemeProvider theme={darkTheme}>
         <GlobalStyle />
-        <StyledApp>Hello World</StyledApp>
+        <StyledApp>
+          <Signup>
+
+          </Signup>
+        </StyledApp>
       </ThemeProvider>
     </BrowserRouter>
   );

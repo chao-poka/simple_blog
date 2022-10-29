@@ -6,10 +6,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    color: white;
+    color: ${props => props.theme.text};
     margin: 0;
-    background-color: ${(props) => props.theme.body};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    background-color: ${props => props.theme.body};
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
